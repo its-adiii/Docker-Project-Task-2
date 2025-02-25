@@ -1,8 +1,8 @@
 package com.example.employeemanagement.model;
-
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+//Part of Jakarta Bean Validation API
+import jakarta.validation.constraints.NotBlank; //Validates that a string field is not null and contains at least one non-whitespace character
+import jakarta.validation.constraints.NotNull; //Validates that a value is not null
+import jakarta.validation.constraints.Size; //Validates the size of a string field
 
 public class Employee {
     private Long id;
@@ -32,32 +32,32 @@ public class Employee {
     }
 
     // Getters and Setters
-    public Long getId() {
+    public Long getId() {                      //Public getter for id field
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Long id) {                //Public setter for id field
         this.id = id;
     }
 
-    public String getName() {
+    public String getName() {                    //Public getter for name field
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name) {           //Public settter for name field
         this.name = name;
     }
 
-    public String getDesignation() {
+    public String getDesignation() {               //Public getter for designation field
         return designation;
     }
 
-    public void setDesignation(String designation) {
+    public void setDesignation(String designation) { //Public setter for designation field
         this.designation = designation;
     }
 
     public String getDepartment() {
-        return department;
+        return department;                     //Public getter for department field     
     }
 
     public void setDepartment(String department) {
